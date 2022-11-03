@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo animate">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <view class="text--w-123ccc-s-90 bg--fl-rgba-bl-1-co-2-co-3-co-0-d-5-br--fr- mt-2">
+      微信小程序中使用unocss
+    </view>
+  </view>
+  <view class="text-center animate-light-speed-in-left animate-iteration-infinite">
+    <button class="py-2 px-4 font-semibold rounded-lg shadow-md text-white bg-emerald-900 border-none mt-5"
+      bind:tap="bindViewTap" hover-class="bg-green-700">
+      unocss
+    </button>
+  </view>
+</view>

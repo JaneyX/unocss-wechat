@@ -1,0 +1,17 @@
+{
+  "name": "miniprogram-ts-less-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "unocss": "unocss miniprogram/pages/**/*.wxml -c miniprogram/unocss.config.js --watch -o miniprogram/unocss.wxss",
+     "unocss:build": "unocss miniprogram/pages/**/*.wxml -c miniprogram/unocss.config.js -o  miniprogram/unocss.wxss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "miniprogram-api-typings": "^2.8.3-1",
+    "unocss": "^0.46.3",
+    "unocss-preset-weapp": "^0.2.0"
+  }
+}
